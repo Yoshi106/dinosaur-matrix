@@ -1,0 +1,15 @@
+{
+  "name": "matrix-of-ones",
+  "version": "1.0.0",
+  "description": "create a matrix where every element is equal to one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/Yoshi106/dinosaur-matrix.git"
+  },
+  "author": "Yoshiaki Aibara",
+  "license": "ISC"
+}
