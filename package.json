@@ -1,6 +1,6 @@
 {
   "name": "matrix-of-ones",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "create a matrix where every element is equal to one",
   "main": "index.js",
   "scripts": {
