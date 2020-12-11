@@ -3,6 +3,7 @@ const makeMatrix = function (rows, columns, value) {
     throw new Error(
       "Invalid input. Please use a number as the first and second arguments."
     );
+
   const element = value || 1;
   let matrix = [];
   for (let i = 0; i < rows; i++) {
@@ -14,4 +15,5 @@ const makeMatrix = function (rows, columns, value) {
   }
   return matrix;
 };
+
 module.exports = makeMatrix;

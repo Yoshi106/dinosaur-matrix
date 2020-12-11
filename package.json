@@ -4,7 +4,14 @@
   "description": "create a matrix where every element is equal to one or the samve value",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "pre-commit": "pretty-quick --staged --no-restage",
+    "pre-push": "npm run test",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "preversion": "npm test",
+    "postversion": "git push origin --tags --no-verify"
   },
   "repository": {
     "type": "git",
@@ -18,5 +25,13 @@
     "matrix of ones"
   ],
   "author": "Yoshiaki Aibara",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "husky": "^4.3.5",
+    "mocha": "^8.2.1",
+    "pinst": "^2.1.1",
+    "prettier": "^2.2.1"
+  }
 }
